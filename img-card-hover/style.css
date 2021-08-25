@@ -1,0 +1,141 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background: #fffc00;
+    font-family: poppins;
+}
+
+.wrapper
+{
+    display:  -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+.photo-wrap
+{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 30px 15px rgba(0,0,0,0.2);
+    margin-left: 20px;
+}
+
+.inside-text
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #008eff;
+    color: #fff;
+}
+
+.inside-text p
+{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    font-size: 11px;
+    line-height: 1.5;
+    padding-top: 15px;
+}
+
+.inside-text h3
+{
+    text-transform: capitalize;
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    margin: 0 auto;
+    padding: 70px 0 0 0;
+    font-weight: 400;
+    
+}
+
+.socials
+{
+    padding-top: 45px;
+    width: 150px;
+    height: 150px;
+}
+
+.socials a
+{
+    
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    margin: 0 7px;
+}
+
+.socials a:hover
+{
+    color:black;
+    transition: 0.5s;
+}
+
+.imgBox
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    box-shadow: inset 0 0 0 15px rgba(255,255,255,0.5);
+    transform-origin: 95% 40% ;
+    transition: all 0.3s ease-in-out;
+    transform: translate3d(0,0,0);
+    z-index: 12;
+    -webkit-background-size:cover ;
+    background-size: cover;
+    background-position: center center;
+    
+
+}
+img
+{
+    width: 300px;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.photo-wrap:hover .imgBox
+{
+    transform: rotateX(-270deg);
+    transition: 0.5s;
+    margin-top: 30px;
+}
+
+.one:hover .imgBox
+{
+    margin-top: -250px;
+    transform: rotateX(-380deg);
+    transition: 0.5s;
+}
+
+.two:hover .imgBox
+{
+    margin-top: 250px;
+    transform: rotateX(380deg);
+    transition: 0.5s;
+}
+
+.theree:hover .imgBox
+{
+    
+    transform: rotate(-170deg);
+    transition: 0.5s;
+}
+
+
